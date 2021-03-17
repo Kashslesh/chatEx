@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+html,body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #DDD9FF;
+    height: 98px;
+}
+.nav-btn {
+    margin-top: 3vh;
+    width: 133px;
+    height: 40px;
+    background-color: #7B16FF;
+    color: white;
+    font-size: 16px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+}
+.logo>h2 {
+    font-size: 36px;
+    color: #DE5E78;
+}
+.centreChat {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    margin-top: 20px;
+
+}
+.rocket1 {
+/* margin-left: auto;
+margin-right: auto;
+width: 15em;
+text-align: center;
+margin-top: 20%; */
+grid-column-start: 1;
+    
+}
+.content {
+    background-color: #E1ECFE;
+    width: 556px;
+    height: auto;
+    border-radius: 20px;
+    min-height: 663px;
+
+}
+
+#inputProf {
+    width: 224px;
+    height: 34px;
+    border-radius: 20px;
+    background-color: #DDD9FF;
+    border: none;
+    text-align: center;
+    margin-left: 10px;
+}
+.btn {
+    width: 97px;
+    height: 40px;
+    background-color: #7B16FF;
+    border-radius: 100px;
+    border: none;
+    color: white;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+.btn2 {
+    width: 97px;
+    height: 40px;
+    background-color: #7B16FF;
+    border-radius: 100px;
+    border: none;
+    color: white;
+    font-size: 14px;
+    margin-top: 10px;
+}
+#envText{
+    width: 360px;
+    height: 70px;
+    border-radius: 20px;
+    background-color: #DDD9FF;
+    border: none;
+    text-align: center;
+    margin-top: 10px;
+}
+#FormMessage>input{
+    margin-left: 91px;
+}
+.btn2 {
+    margin-left: 223px;
+}
+.textZone>p {
+    font-size: 12px;
+}
+.chatleft {
+    padding-top: 30px;
+    display: flex;
+}
+.colordiv {
+    width: auto;
+    height: auto;
+    min-width: 242px;
+    min-height: 59px;
+    background-color: #353DF0;
+    border-radius: 20px;
+    color: white;
+}
+.message {
+    position: relative;
+    left: 20px;
+    top: 15px;
+    font-size: 22px;
+}
+.chatright {
+    display: flex;
+    justify-content: end;
+    margin-left: 40%;
+}
+#right {
+    width: 60px;
+    height: 60px;
+    margin-top: 48px;
+}
+#left{
+    margin-top: 20px;
+    width: 60px;
+    height: 60px;
+    margin-top: 48px;
+}
+.rocket  {
+    grid-column-start: 3;
+}
+i {
+    transform: rotate(-44deg);
+    font-size: 65px;
+    position: relative;
+    left: 80px;
+    top: 70%;
+    color: #353DF0;
+    animation-name: i;
+    animation-duration: 3s;
+}
+
+.divChat {
+    margin-left: auto;
+    margin-right: auto;
+}
+.mb-3{
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+
+}
+@keyframes i {
+    0% {
+        bottom: 530px;
+    }
+    25% {
+        bottom: 410px;
+    }
+    100%{
+        top: 50px;
+    }
+}
