@@ -1,17 +1,16 @@
 <?php 
-require 'fonction.php';
-$error = null;
-// connexion à chat
-if(isset($_POST["verlog"]) && isset($_POST["logpass"])){
-    $array_user = read ($_POST["verlog"]);
-    if (password_verify(($_POST["logpass"]), $array_user["mdp"])){
+ require 'fonction.php';
+if(isset($_POST['psuedo']) && isset($_POST['textchat'])){
+    $psuedo = htmlspecialchars($_POST['psuedo']);
+    $mesg = htmlspecialchars($_POST['textchat']);
+    
+    send_message($psuedo, $mesg);
 
-        $_SESSION["admin"]= $_POST["verlog"];
-        header('LOCATION: ../views/chat.php');
-     }else{
-        $error = "Mot de passe ou identifiant invalident";
-     }
-
+    header("Location: ../index.php");
 }
+//  affichage();
+ $allMessage = affichage();
+
+echo json_encode($allMessage);
 
 ?>

@@ -38,6 +38,7 @@ width: 15em;
 text-align: center;
 margin-top: 20%; */
 grid-column-start: 1;
+
     
 }
 .content {
@@ -66,9 +67,8 @@ grid-column-start: 1;
     border: none;
     color: white;
     font-size: 14px;
+    margin-left: 30%;
     margin-top: 10px;
-    margin-left: auto;
-    margin-right: auto;
 }
 form {
     display: flex;
@@ -139,6 +139,7 @@ form {
 }
 .rocket  {
     grid-column-start: 3;
+
 }
 i {
     transform: rotate(-44deg);
@@ -147,19 +148,21 @@ i {
     left: 80px;
     top: 70%;
     color: #353DF0;
-    animation-name: i;
-    animation-duration: 3s;
+    /* animation-name: i;
+    animation-duration: 3s ; */
+    animation: i 1.5s infinite;
 }
 
 .divChat {
     margin-left: auto;
     margin-right: auto;
 }
-.mb-3{
-    margin-left: auto;
-    margin-right: auto;
-    width: auto;
-
+li {
+    list-style: none;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    font-size: 13px;
 }
 @keyframes i {
     0% {
